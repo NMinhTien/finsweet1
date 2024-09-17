@@ -1,0 +1,221 @@
+/* project */
+.project-padding{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.project-container{
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 100%;
+    max-width: 80rem;
+}
+.project-padding__block{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.section_title-wrapper{
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1rem;
+    grid-template-rows: auto;
+    grid-template-columns: 4.5rem 1fr;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    margin-bottom: 2rem;
+    display: grid;
+}
+.project-padding__block h3{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 18.75px;
+letter-spacing: 2px;
+text-align: left;
+
+}
+.project-padding__block h1{
+font-family: Roboto;
+font-size: 56px;
+font-weight: 700;
+line-height: 67.2px;
+padding-left: 4rem;
+}
+.project-text::before{
+    content: "";
+    grid-area: 1 / 1 / 2 / 2;
+    display: table;
+}
+.project-text{
+    padding:0 6rem;
+}
+.project-text p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 25.6px;
+text-align: left;
+color: var(--secondary-text);
+padding: 1rem 0;
+}
+.w-richtext figure.w-richtext-align-fullwidth {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.w-richtext figure.w-richtext-align-fullwidth > div {
+    padding-bottom: inherit;
+    display: inline-block;
+}
+.w-richtext figure img {
+    width: 100%;
+}
+
+.w-richtext img {
+    max-width: 100%;
+    display: inline-block;
+    border-radius: 3rem;
+    padding: 1rem 0;
+}
+.project-padding__block h2{
+font-family: Roboto;
+font-size: 48px;
+font-weight: 700;
+line-height: 57.6px;
+text-align: left;
+padding-top: 2rem;
+}
+.project-padding__block ul{
+    list-style-type: circle;
+    padding-left: 1rem;
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 25.6px;
+text-align: left;
+}
+
+/* stats */
+.section_project-stats{
+    background-color: var(--off-white);
+}
+.stats-padding{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.stats-container{
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 100%;
+    max-width: 80rem;
+}
+.stats-padding__block{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.project_stats_grid{
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+.project_stats_item{
+    display: flex;
+}
+.icon-1x1-small {
+    margin-top: -4rem;
+}
+.icon-1x1-small img {
+    max-width: 100%;
+    display: inline-block;
+}
+.stats-text{
+    margin-top: -.25rem;
+    margin-left: 1.25rem;
+}
+.stats-text h2{
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 38.4px;
+text-align: left;
+
+}
+.stats-text p{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 25.6px;
+text-align: left;
+color: var(--secondary-text);
+}
+
+
+@media screen and (max-width: 767px){
+    .project-padding{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .project-padding__block{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .section_title-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .section_title-wrapper h3{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .project-padding__block h1{
+        font-size: 2.5rem;
+    }
+    .project-padding__block h1{
+        padding-left: 0;
+    }
+    .project-text{
+        padding: 0;
+    }
+    .project-text h2{
+        font-size: 1.5rem;
+    }
+
+    /* stats */
+    .stats-padding{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .stats-padding__block{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .project_stats_grid{
+        grid-template-columns: 1fr;
+    }
+    .icon-1x1-small {
+        margin-top: 0rem;
+        width: 1.5rem;
+    height: 1.5rem;
+    }
+    .project_stats_item h2{
+        font-size: 1.25rem;
+    }
+    .icon-1x1-small{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .icon-1x1-small{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0;
+    }
+    .project_stats_grid{
+        grid-template-columns: 1fr;
+    }
+
+}
